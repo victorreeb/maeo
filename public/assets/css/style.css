@@ -1,0 +1,17 @@
+.navbar-footer{
+    text-align:center;
+    font-size:1.7rem;
+    color:white;
+    height:20px;
+}
+
+.panel-register{
+    width:70%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+body{
+    padding-top:70px;
+    padding-bottom:70px;
+}

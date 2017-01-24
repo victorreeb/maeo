@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block homeactive %}{% endblock %}
+{% block signupactive %}class="active"{% endblock %}
+
+{% block content %}
+
+    <div class="panel panel-primary panel-register text-center">
+        <div class="panel-heading"><h1 class="panel-title">Enregistrement</h1></div>
+        <div class="panel-body">
+
+            <form action="signup" method="post">
+
+                <div class="form-group">
+                    <label for="emailRegister">Adresse email</label>
+                    <input class="form-control" name="email" type="email" autocomplete="off" placeholder="Adresse email" required/>
+                </div>
+
+                <div class="form-group">
+                    <label for="passwordRegister">Mot de passe</label>
+                    <input class="form-control" name="mdp" type="password" autocomplete="off" placeholder="Mot de passe" required/>
+                </div>
+
+                <div class="form-group">
+                    <label for="firstNameRegister">Prénom</label>
+                    <input class="form-control" name="prenom" type="text" autocomplete="off" placeholder="Prénom" required/>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastNameRegister">Nom</label>
+                    <input class="form-control" name="nom" type="text" autocomplete="off" placeholder="Nom" required/>
+                </div>
+
+                <button class="btn btn-primary" type="submit">S'enregistrer</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+{% endblock %}

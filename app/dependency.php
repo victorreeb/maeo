@@ -22,7 +22,7 @@ $container['view'] = function ($c) {
         $c['request']->getUri()
     ));
     $view->addExtension(new Twig_Extension_Debug());
-	
+
     return $view;
 };
 
